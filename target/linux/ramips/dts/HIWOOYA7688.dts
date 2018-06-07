@@ -135,10 +135,9 @@
 
 	gpio-leds {
 		compatible = "gpio-leds";
-		wifi {
-			label = "mediatek:orange:wifi";
-			gpios = <&wgpio 0 0>;
-			default-state = "on";
+		system {
+			label = "wooya_system_led";
+			gpios = <&gpio1 5 0>;//gpio37
 		};
 	};
 

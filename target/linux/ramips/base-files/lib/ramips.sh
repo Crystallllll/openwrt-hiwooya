@@ -400,6 +400,9 @@ ramips_board_detect() {
 	*"Wooya IOT Smart 7628")
                 name="hiwooya7628"
                 ;;
+	*"Wooya IOT Smart 7620")
+                name="hiwooya7620"
+                ;;
 	*"Wansview NCS601W")
 		name="ncs601w"
 		;;

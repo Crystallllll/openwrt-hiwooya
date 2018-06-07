@@ -915,6 +915,7 @@ Image/Build/Profile/ZBT-WA05=$(call BuildFirmware/Default8M/$(1),$(1),zbt-wa05,Z
 Image/Build/Profile/ArcherC20i=$(call BuildFirmware/Tplink/$(1),$(1),ArcherC20i,ArcherC20i)
 microwrt_mtd_size=16515072
 Image/Build/Profile/MicroWRT=$(call BuildFirmware/CustomFlash/$(1),$(1),microwrt,MicroWRT,$(microwrt_mtd_size))
+Image/Build/Profile/HiWooya7620=$(call BuildFirmware/Default32M/$(1),$(1),HiWooya7620,HIWOOYA7620)
 
 
 ifeq ($(SUBTARGET),mt7620)
@@ -948,6 +949,7 @@ define Image/Build/Profile/Default
 	$(call Image/Build/Profile/ZBT-WA05,$(1))
 	$(call Image/Build/Profile/ArcherC20i,$(1))
 	$(call Image/Build/Profile/MicroWRT,$(1))
+	$(call Image/Build/Profile/HiWooya7620,$(1))
 endef
 endif
 
